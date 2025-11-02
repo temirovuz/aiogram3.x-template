@@ -1,7 +1,7 @@
 from decouple import config
 
 ADMIN_ID = config("ADMIN_ID")
-TOEKN = config("TOKEN")
+TOKEN = config("TOKEN")
 
 
 TORTOISE_ORM = {

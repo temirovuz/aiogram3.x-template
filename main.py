@@ -6,7 +6,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
 from tortoise import Tortoise
-from config import TORTOISE_ORM, TOEKN
+from config import TORTOISE_ORM, TOKEN
 from handlers import router
 
 
@@ -31,7 +31,7 @@ async def shutdown(bot: Bot):
 
 async def main():
     await init_db()
-    bot = Bot(token=TOEKN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     dp = Dispatcher()
     dp.startup.register(startup)
     dp.shutdown.register(shutdown)
