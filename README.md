@@ -2,6 +2,11 @@
 
 ### Loyihani clone qilasiz.
 
+### Uv ni ornatib olamiz bu linux uchun
+
+    curl -LsSf https://astral.sh/uv/install.sh | sh && chmod +x /root/.local/bin/uv
+
+
 > 1.  Clone qilingan folderdaga kirasiz.
 > 2.  .env  **file ichida** TOKEN, ADMIN\_ID, DB\_HOST, DB\_PORT, DB\_USER,DB\_PASSWORD, DB\_NAME
 
